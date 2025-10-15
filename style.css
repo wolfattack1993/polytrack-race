@@ -1,0 +1,36 @@
+/* public/style.css */
+body { font-family: 'Roboto', sans-serif; background-color: #0a192f; color: #ffffff; overflow: hidden; }
+.title-glow { font-family: 'Press Start 2P', cursive; color: #e6f7ff; text-shadow: 0 0 7px #00b8ff, 0 0 10px #00b8ff, 0 0 21px #00b8ff, 0 0 42px #00b8ff; }
+.form-input { background-color: #172a45; border: 1px solid #304a6e; }
+.form-btn { background-color: #5691c8; }
+.form-btn:hover { background-color: #437ba8; }
+.admin-code-link { color: #1e3a5f; cursor: pointer; transition: color 0.2s; }
+.admin-code-link:hover { color: #304a6e; }
+
+/* Admin Bar Styles */
+#admin-broadcast-bar { position: absolute; top: 0; left: 0; width: 100%; background-color: rgba(255,215,0,0.8); display: flex; align-items: center; padding: 8px; z-index: 1000; }
+#admin-broadcast-input { flex-grow: 1; background: transparent; border: none; color: black; padding: 4px 8px; font-weight: bold; border-bottom: 2px solid black; }
+#admin-broadcast-input::placeholder { color: #333; }
+#admin-broadcast-btn { background-color: #0a192f; color: white; border: 2px solid white; padding: 4px 12px; border-radius: 5px; margin-left: 10px; cursor: pointer; }
+#admin-broadcast-btn:hover { background-color: #172a45; }
+
+/* Global Message Display Styles */
+#global-message {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 184, 255, 0.85);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 1001;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#global-message.show {
+    opacity: 1;
+}
